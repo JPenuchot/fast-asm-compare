@@ -3,13 +3,10 @@
 .build/
 bin/
 output/
-ext/*/
 include/*
 src__*
 
 ## External libs
-
-ext/
 
 ## CMake
 
