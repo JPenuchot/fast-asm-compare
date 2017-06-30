@@ -3,7 +3,7 @@
 .build/
 bin/
 output/
-ext/*
+ext/*/
 include/*
 src__*
 
