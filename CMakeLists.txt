@@ -12,21 +12,17 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -std=c++14 -msse4.2 -mfma -DNDEBUG")
 
 #find_package(GBenchmark REQUIRED)
 
-#	Adding includes
+#	Adding includes & Linking
 
 include_directories(
-	"ext/boost_1_64_0" 
-	"ext/boost.simd/include"
 	"include"
-	"ext/OpenBLAS/include"
 	"ext/iaca-lin64/include"
 )
 
 link_directories(
-	"ext/OpenBLAS/lib"
 	"ext/iaca-lin64/lib"
 )
-link_libraries("openblas")
+#link_libraries("derp")
 
 #	Adding sources
 
