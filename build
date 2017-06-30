@@ -49,15 +49,16 @@ cd ${ORIGIN}
 
 # Cleaning stuff
 
-rm ${BIN_DIR}/*.asm
-rm ${BIN_DIR}/*.iaca
-rm ${BIN_DIR}/*.dot
+rm ${BIN_DIR}/*
 
 # Building stuff
 
 EXEC_LIST=$(ls ${BIN_DIR})
 
 for DUMP_EXEC in ${EXEC_LIST}; do
+	echo
+	echo "=== Building and processing ${DUMP_EXEC}..."
+
 	objdump -dC ${BIN_DIR}/${DUMP_EXEC} > ${BIN_DIR}/${DUMP_EXEC}.asm
 	iaca -graph ${BIN_DIR}/${DUMP_EXEC}__ -o ${BIN_DIR}/${DUMP_EXEC}.iaca ${BIN_DIR}/${DUMP_EXEC}
 done
