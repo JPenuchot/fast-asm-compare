@@ -1,16 +1,16 @@
 #!/bin/bash
-
-# Intel IACA support
-
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ORIGIN}/ext/iaca-lin64/lib/
-export PATH=${PATH}:${ORIGIN}/ext/iaca-lin64/bin/
-
+##
 ## Managing default directories, args etc...
 
 ORIGIN=$(pwd)
 
 DEFAULT_CMAKE_BUILD_DIR=".build"
 DEFAULT_BIN_DIR="bin"
+
+# Intel IACA support
+
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ORIGIN}/ext/iaca-lin64/lib/
+export PATH=${PATH}:${ORIGIN}/ext/iaca-lin64/bin/
 
 CMAKE_BUILD_DIR=${1}
 BIN_DIR=${2}
