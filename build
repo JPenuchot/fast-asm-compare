@@ -33,6 +33,10 @@ if [ ! -d "$BIN_DIR" ]; then
   mkdir ${BIN_DIR}
 fi
 
+# Cleaning stuff
+
+rm ${BIN_DIR}/*
+
 ## *puts on sunglasses*
 
 cd ${CMAKE_BUILD_DIR}
@@ -46,10 +50,6 @@ make
 mv prog* ${ORIGIN}/${BIN_DIR}
 
 cd ${ORIGIN}
-
-# Cleaning stuff
-
-rm ${BIN_DIR}/*
 
 # Building stuff
 
