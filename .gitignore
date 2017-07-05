@@ -3,7 +3,7 @@
 .build/
 bin/
 output/
-include/*
+include/
 src__*
 
 ## External libs
