@@ -61,6 +61,6 @@ CTestTestfile.cmake
 
 # IACA output
 
-.iaca
-.dot
-.pdf
+*.iaca
+*.dot
+*.pdf
