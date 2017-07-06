@@ -18,6 +18,7 @@ include_directories(
 	"include"
 	"ext/iaca-lin64/include"
 	"ext/boost.simd/include"
+	"ext/boost_1_64_0/include"
 )
 
 link_directories(
