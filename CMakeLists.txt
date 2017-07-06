@@ -17,6 +17,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -std=c++14 -msse4.2 -mfma -DNDEBUG")
 include_directories(
 	"include"
 	"ext/iaca-lin64/include"
+	"ext/boost.simd/include"
 )
 
 link_directories(
