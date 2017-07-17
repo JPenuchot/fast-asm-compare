@@ -8,6 +8,8 @@ The assembly dump doesn't require anything except objdump that should already be
 
 Graphs are also generated and can be converted into SVG and/or PDF using `dot` to visualize critical paths.
 
+The project provides a (very) minimal header to add marks into your ASM code (FC_MARKER define).
+
 ## How does it work ?
 
 Add your sources in a ```src__[NAME]``` folder and the build script will take care of the rest, ie :
