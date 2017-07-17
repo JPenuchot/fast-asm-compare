@@ -14,6 +14,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -std=c++14 -msse4.2 -mfma -DNDEBUG")
 
 #	Adding includes & Linking
 
+## You might wanna change that
 include_directories(
 	"include"
 	"ext/iaca-lin64/include"
@@ -21,6 +22,7 @@ include_directories(
 	"ext/boost_1_64_0"
 )
 
+## You might wanna change that
 link_directories(
 	"ext/iaca-lin64/lib"
 )
