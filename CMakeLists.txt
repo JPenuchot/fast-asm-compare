@@ -6,7 +6,7 @@ project(Compare)
 #SET(CMAKE_C_COMPILER /usr/bin/clang)
 #SET(CMAKE_CXX_COMPILER /usr/bin/clang++)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -std=c++14 -msse4.2 -mfma -DNDEBUG")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -std=c++14 -msse4.2 -mfma -DNDEBUG -DFASMCMP")
 
 #	Ckecking for packages
 
@@ -20,6 +20,7 @@ include_directories(
 	"ext/iaca-lin64/include"
 	"ext/boost.simd/include"
 	"ext/boost_1_64_0"
+	"ext/glm"
 )
 
 ## You might wanna change that
